@@ -11,7 +11,7 @@ export function LandingHeader({ user, onGetStarted, onSignIn, onNavigate, onSign
   const isAuthed = Boolean(user)
 
   return (
-    <header className="landing-nav page-container">
+    <header className="landing-nav">
       <button className="logo-button" aria-label="Back to top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><Logo /></button>
       <nav className={`landing-links ${showMobileNav ? 'landing-links-open' : ''}`}>
         <a href="#answers">What we do</a>
