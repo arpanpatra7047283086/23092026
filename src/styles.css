@@ -246,6 +246,15 @@ h1 em, h2 em, h3 em { color: #5bc7aa; font-family: 'Noto Sans Bengali', 'Manrope
   .faq-item p { margin-right: 25px; font-size: 11px; }
 }
 
+.sidebar-user { display: flex; align-items: center; gap: 10px; min-width: 0; margin-top: 14px; padding: 11px 10px; background: linear-gradient(135deg, #f1fbf6, #e8f8f1); border: 1px solid #d8eee3; border-radius: 14px; }
+.sidebar-user .avatar { width: 36px; height: 36px; border: 2px solid #fff; background: linear-gradient(135deg, #83dcb9, #b9f4d4); color: #165c48; box-shadow: 0 4px 12px rgba(41, 126, 95, .16); }
+.sidebar-user > div { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 3px; }
+.sidebar-user strong, .sidebar-user small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sidebar-user strong { color: #244d42; font-size: 11px; font-weight: 800; }
+.sidebar-user small { color: #78958b; font-size: 9px; }
+.sidebar-user .more-button { display: grid; flex: 0 0 auto; place-items: center; width: 26px; height: 26px; color: #6a9182; background: rgba(255,255,255,.7); border: 1px solid #d7ebe1; border-radius: 8px; }
+.sidebar-user .more-button:hover { color: #287b61; background: #fff; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
